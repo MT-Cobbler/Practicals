@@ -1,0 +1,11 @@
+:root {
+    --bgColor: lightGrey;
+}
+
+div[class^="col"] {
+    border: 1px solid var(--bgColor);
+}
+
+div:nth-child(2) {
+    background-color: var(--bgColor);
+}

@@ -1,0 +1,19 @@
+:root {
+    --gC: lightGrey;
+}
+
+#row1>div[class^="col"] {
+    border: 1px solid var(--gC);
+}
+
+#row1>div:nth-child(2) {
+    background-color: var(--gC);
+}
+
+#row2>div[class^="col"] {
+    border: 1px solid var(--gC);
+}
+
+#row2>div:nth-child(2) {
+    background-color: var(--gC);
+}

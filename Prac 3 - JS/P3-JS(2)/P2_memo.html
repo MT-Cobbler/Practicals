@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IMY 220 - Prac 3</title>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+		<h2 class="mt-4">Check Prime</h2>
+	  	<div class="form-group">
+	    	<label for="primeChecker">Check if prime number</label>
+	    	<input type="text" class="form-control" id="primeChecker">
+	    </div>
+	  	<button class="btn btn-dark" id="checkPrimeBtn">Submit</button>
+	  	<span class="ml-4" id="primeResult">Enter number</span>
+
+
+		<h2 class="mt-4">Prime List</h2>
+	  	<div class="form-group">
+	    	<label for="primeList">Return list of prime numbers</label>
+	    	<input type="text" class="form-control" id="primeList">
+	    </div>
+	  	<button class="btn btn-dark" id="getPrimeList">Submit</button>
+	  	<span class="ml-4" id="primeListResult">Enter number</span>
+
+	  	<h2 class="mt-4">Check Palindrome</h2>
+	  	<div class="form-group">
+	    	<label for="palindromeChecker">Check if word is a palindrome</label>
+	    	<input type="text" class="form-control" id="palindromeChecker">
+	    </div>
+	  	<button class="btn btn-dark" id="checkPalindrome">Submit</button>
+	  	<span class="ml-4" id="palindromeResult">Enter string</span>
+	</div>
+
+	<script type="text/javascript">
+		var _0x51b1=['palindromeChecker','primeListResult','split','onclick','primeChecker','getElementById','length','fillArray','primeResult','innerHTML','checkPalindrome','primeList','isPrime','checkPrimeBtn','value','getPrimeList','push','every'];(function(_0x1619e8,_0x51b1bc){var _0xbaf628=function(_0x5162ff){while(--_0x5162ff){_0x1619e8['push'](_0x1619e8['shift']());}};_0xbaf628(++_0x51b1bc);}(_0x51b1,0xc0));var _0xbaf6=function(_0x1619e8,_0x51b1bc){_0x1619e8=_0x1619e8-0x0;var _0xbaf628=_0x51b1[_0x1619e8];return _0xbaf628;};function PrimeChecker(){this['isPrime']=function(_0x31e4e1){for(var _0x30f185=0x2;_0x30f185<_0x31e4e1;_0x30f185++)if(_0x31e4e1%_0x30f185===0x0)return![];return _0x31e4e1>0x1;},this['fillArray']=function(_0x2bedd3){for(var _0x5dfde7=0x2,_0xca0069=[];_0xca0069[_0xbaf6('0xc')]!=_0x2bedd3;this[_0xbaf6('0x0')](_0x5dfde7)&&_0xca0069[_0xbaf6('0x4')](_0x5dfde7),_0x5dfde7++);return _0xca0069;};}function checkPalindrome(_0x4c3ad8){return _0x4c3ad8=_0x4c3ad8[_0xbaf6('0x8')](''),_0x4c3ad8[_0xbaf6('0x5')](function(_0x446fe9,_0x4e3e09){return _0x446fe9===_0x4c3ad8[_0x4c3ad8[_0xbaf6('0xc')]-_0x4e3e09-0x1];});}const checker=new PrimeChecker();document[_0xbaf6('0xb')](_0xbaf6('0x1'))[_0xbaf6('0x9')]=function(){document[_0xbaf6('0xb')](_0xbaf6('0xe'))[_0xbaf6('0xf')]=checker['isPrime'](document[_0xbaf6('0xb')](_0xbaf6('0xa'))[_0xbaf6('0x2')]);},document[_0xbaf6('0xb')](_0xbaf6('0x3'))[_0xbaf6('0x9')]=function(){document[_0xbaf6('0xb')](_0xbaf6('0x7'))[_0xbaf6('0xf')]=checker[_0xbaf6('0xd')](document[_0xbaf6('0xb')](_0xbaf6('0x11'))[_0xbaf6('0x2')]);},document['getElementById'](_0xbaf6('0x10'))[_0xbaf6('0x9')]=function(){document[_0xbaf6('0xb')]('palindromeResult')[_0xbaf6('0xf')]=checkPalindrome(document[_0xbaf6('0xb')](_0xbaf6('0x6'))['value']);};
+	</script>
+</body>
+</html>

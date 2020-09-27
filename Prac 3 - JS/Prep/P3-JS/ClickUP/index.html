@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IMY 220 - Prac 3</title>
+	<meta charset="utf-8" />
+	<meta name="author" content="Name Surname" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<style type="text/css">
+		div#result{
+			font-weight: bold;
+			font-size: 1.5em;
+		}
+
+		div#block{
+			width: 100px;
+			height: 100px;
+			background-color: black;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1 class="mt-5">Section 1</h1>
+		<div class="input-group">
+			<input type="text" class="form-control" />
+			<input type="text" class="form-control" />
+			<input type="text" class="form-control" />
+		</div>
+		<div class="input-group mt-1">
+			<input type="text" class="form-control" />
+			<input type="text" class="form-control" />
+			<input type="text" class="form-control" />
+		</div>
+		<div class="input-group mt-1">
+			<button class="btn btn-dark" id="calculateLength">Calculate Length</button>
+		</div>
+		<div id="result">&nbsp;	</div>
+
+		<h1 class="mt-5">Section 2</h1>
+		<div id="block"></div>
+		<div class="input-group mt-1">
+			<button class="btn btn-dark" id="startAnimation">Start Animation</button>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
