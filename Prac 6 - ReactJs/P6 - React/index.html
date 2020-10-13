@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta name="author" content="Matthew Schoeman" />
+    <meat charset="utf-8" />
+    <title>Practical 6</title>
+    <!--Bootstrap CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+    <!--ReactJS-->
+
+</head>
+
+<div id="root" class="container"></div>
+
+
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <!--Babel-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
+    <script type="text/babel">
+        class PasswordInput extends React.Component{
+
+             constructor(props){
+                  super(props);
+                  this.pass = React.createRef();
+                  this.checkPass = this.checkPass.bind(this);
+             }
+             checkPass(){
+                  let _pword = this.pass.current.value;
+                  let isValid = _pword.length > 8 && _pword != _pword.toLowerCase() && /\d+/.test(_pword);
+                  this.props.validatePass(isValid);
+             }
+
+             render(){
+               return(
+                    <div className="row">
+                         <input type="text" className="form-control" ref={this.pass} onChange={this.checkPass}/>
+                    </div>
+               )
+             }
+        }
+        class LoginForm extends React.Component{
+             constructor(props){
+                  super(props);
+                  this.state = { validPassword:false};
+                  this.validate = this.validate.bind(this);
+             }
+             validate(isValid){
+                  this.setState({validPassword: isValid});
+             }
+             render(){
+                  return(
+                       <div className="input-group mt-5">
+                         <PasswordInput validatePass={this.validate} /> <br/>
+                         <button disabled={!this.state.validPassword} className="btn btn-default">Submit</button>
+                       </div>
+                  );
+             }
+        }
+        ReactDOM.render(
+             <LoginForm/>,
+             document.getElementById("root")
+        );
+    </script>
+</body>
+
+</html>
